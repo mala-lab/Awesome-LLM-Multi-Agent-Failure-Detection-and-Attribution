@@ -1,4 +1,3 @@
-# Awesome-LLM-Multi-Agent-Failure-Detection-and-Attribution
 
 # Awesome-LLM-Multi-Agent-Failure-Detection-and-Attribution
 
@@ -235,30 +234,4 @@ The categories below are editorial groupings based on each paper's stated task a
 | AgentErrorBench | General-agent errors and debugging | [Project repository](https://github.com/ulab-uiuc/AgentDebug) |
 | ATBench | Agent safety evaluation and diagnosis | [Dataset](https://huggingface.co/datasets/AI45Research/ATBench) |
 
-Dataset names, label taxonomies, observation access, and task scopes differ. Results across these resources should not be compared as though they were the same detection or attribution task.
-
-## Contributing
-
-Please include:
-
-1. Full paper title, authors, year, and a canonical paper URL.
-2. The most appropriate category and whether the setting is MAS-specific or general-agent.
-3. Whether inference uses a prefix, a full trajectory, external verification, or re-execution.
-4. A short explanation of the failure signal and any recovery or learning mechanism.
-5. Author-provided code/data links when available.
-
-Use one full entry per paper, with cross-references for additional capabilities. Label papers as preprints unless the venue is supported by a publication or author source. Do not equate memory updates, code changes, and parameter training.
-
-**Entry template**
-
-```markdown
-- **[AuthorYear] Method.** Full Paper Title. *Venue or arXiv*, Year. [\[paper\]](URL) [\[code\]](URL)
-  - **Scope / setting:** MAS or general-agent; online or post-hoc.
-  - **Mechanism:** What evidence determines failure or responsibility?
-  - **Response / update:** Alarm, attribution, correction, memory, skill, code, or parameters.
-```
-
-## Acknowledgment
-
-The category-and-entry presentation was inspired by [Awesome-LLM-LVLM-Hallucination-Detection-and-Mitigation](https://github.com/mala-lab/Awesome-LLM-LVLM-Hallucination-Detection-and-Mitigation).
 
