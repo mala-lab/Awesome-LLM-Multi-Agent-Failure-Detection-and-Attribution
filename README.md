@@ -64,50 +64,26 @@ Contributions of relevant papers, author-provided resources, and corrections are
 ## Failure Benchmarks and Taxonomies
 
 - **[Cemri2025] MAST / MAST-Data.** Why Do Multi-Agent LLM Systems Fail? *arXiv*, 2025. [\[paper\]](https://arxiv.org/abs/2503.13657) [\[code/data\]](https://github.com/multi-agent-systems-failure-taxonomy/MAST)
-  - Empirical MAS failure analysis with a taxonomy covering system design, inter-agent misalignment, and task verification. Useful for defining error categories and studying failure patterns.
-
 - **[Zhang2025] Who&When.** Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems. *ICML*, 2025. [\[paper\]](https://arxiv.org/abs/2505.00212) [\[code\]](https://github.com/ag2ai/Agents_Failure_Attribution) [\[data\]](https://huggingface.co/datasets/Kevin355/Who_and_When)
-  - Defines agent-and-step attribution and introduces annotated MAS failures. Includes all-at-once, step-by-step, and binary-search attribution baselines.
-
 - **[Deshpande2025] TRAIL.** TRAIL: Trace Reasoning and Agentic Issue Localization. *arXiv*, 2025. [\[paper\]](https://arxiv.org/abs/2505.08638) [\[data\]](https://huggingface.co/datasets/PatronusAI/TRAIL)
-  - Human-annotated traces for error categorization and localization. Includes both single-agent and multi-agent workflows; its scope is broader than MAS-only attribution.
-
 - **[Kong2026] Aegis / AEGIS-Bench.** Aegis: Automated Error Generation and Attribution for Multi-Agent Systems. *ICLR*, 2026. [\[paper\]](https://arxiv.org/abs/2509.14295) [\[code\]](https://github.com/kfq20/AEGIS) [\[data\]](https://huggingface.co/datasets/Fancylalala/AEGIS)
-  - Produces labeled MAS failures through controlled, context-aware error injection. Supports learning and evaluation with faulty-agent and error-mode annotations. First released as a preprint in 2025.
-
 - **[Liu2026] Who&When Pro.** Who&When Pro: Can LLMs Really Attribute Failures in AI Agents? *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2607.09996)
-  - Extends attribution evaluation across multiple modalities and task benchmarks using a controlled successful-prefix replay and failure-injection pipeline.
-
 - **[Chen2026] TraceElephant.** Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2604.22708)
-  - Studies failure attribution with full execution traces and reproducible environments, emphasizing the importance of observing inputs and context alongside agent outputs.
-
+  
 ## Failure Detection
 
 ### Representation-Based Monitoring
 
 - **[Shen2025] MASC.** Metacognitive Self-Correction for Multi-Agent System via Prototype-Guided Next-Execution Reconstruction. *arXiv*, 2025. [\[paper\]](https://arxiv.org/abs/2510.14319) [\[author-linked anonymous code\]](https://anonymous.4open.science/r/MASC-7194)
-  - **Setting:** Online step monitoring.
-  - **Signal:** History-conditioned next-step embedding reconstruction and a learned normal-step prototype prior.
-  - **Response:** A detected deviation can trigger a correction agent before the message propagates downstream.
 
 ### Online Auditing and Message Checking
 
 - **[Zhang2026] AgentForesight.** AgentForesight: Online Auditing for Early Failure Prediction in Multi-Agent Systems. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2605.08715) [\[code\]](https://github.com/ZBox1005/AgentForesight) [\[project\]](https://zbox1005.github.io/agent-foresight/) [\[data\]](https://huggingface.co/datasets/ZBox008003/AFTraj)
-  - **Setting:** Prefix-only online auditing.
-  - **Signal:** An RL-trained auditor produces continue/alarm decisions and localizes the decisive agent and step.
-  - **Resource:** AFTraj-2K includes safe and unsafe trajectories for studying online alarms.
-
 - **[Wang2026a] MASRubric.** MASRubric: Auditing Information Flow in Multi-Agent Systems with Failure-Distilled Pitfall Rubrics. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2602.23258) [\[author-linked repository\]](https://github.com/TonySY2/MASRubric)
-  - **Setting:** Online checking of intermediate messages.
-  - **Signal:** Retrieves applicable checking criteria from a rubric bank distilled from historical failures.
-  - **Response:** Routes a message to broadcast, revision, or withholding based on the audit.
 
 ### Proactive Failure Forecasting
 
 - **[Zhao2026] ProMAS.** ProMAS: Proactive Error Forecasting for Multi-Agent Systems Using Markov Transition Dynamics. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2603.20260)
-  - **Setting:** Prefix-based proactive error analysis.
-  - **Signal:** Semantic changes are represented through Markov transitions, with a prediction head and risk-jump detection.
-  - **Focus:** Earlier warning with reduced trajectory observation; forecasting and observed-step detection should be evaluated separately.
 
 ## Failure Attribution
 
@@ -117,45 +93,29 @@ See **[Who&When](#failure-benchmarks-and-taxonomies)** for the task formulation,
 
 ### Hypothesis Verification
 
-- **[Qiao2026] VerifyMAS.** VerifyMAS: Hypothesis Verification for Failure Attribution in LLM Multi-Agent Systems. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2605.17467) [\[code\]](https://github.com/mala-lab/VerifyMAS) [\[project\]](https://hezheqiao2022.github.io/VerifyMAS/)
-  - **Setting:** Full-trajectory failure attribution.
-  - **Mechanism:** Verifies candidate error hypotheses against the trajectory, then identifies responsible agents.
-  - **Focus:** Error-first verification for local and global failure patterns, including cross-agent inconsistencies.
+- **[Qiao2026] VerifyMAS.** VerifyMAS: Hypothesis Verification for Failure Attribution in LLM Multi-Agent Systems. *NeurIPS*, 2026. [\[paper\]](https://arxiv.org/abs/2605.17467) [\[code\]](https://github.com/mala-lab/VerifyMAS) [\[project\]](https://hezheqiao2022.github.io/VerifyMAS/)
 
 ### Dependency-Based Attribution
 
 - **[Deng2026] DeFA.** DeFA: Dependency-Guided Failure Attribution for LLM Agents. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2610.01256)
-  - **Setting:** Trajectory-based attribution, including multi-agent evaluations.
-  - **Mechanism:** Builds event-dependency and failure-propagation graphs to identify the decisive step, responsible agent, and error category.
-  - **Improvement link:** Evaluates diagnostic feedback as input to subsequent skill evolution.
 
 ### Intervention-Based Debugging
 
 - **[Ma2025] DoVer.** DoVer: Intervention-Driven Auto Debugging for LLM Multi-Agent Systems. *arXiv*, 2025. [\[paper\]](https://arxiv.org/abs/2512.06749)
-  - **Setting:** Debugging with access to execution interventions.
-  - **Mechanism:** Tests failure hypotheses by editing messages or plans and observing subsequent execution.
-  - **Focus:** Whether an intervention repairs the task or produces progress, rather than assuming one uniquely correct agent-step attribution.
 
 ### Related General-Agent Diagnosis
 
 - **[Zhu2025] AgentDebug.** Where LLM Agents Fail and How They can Learn From Failures. *arXiv*, 2025. [\[paper\]](https://arxiv.org/abs/2509.25370) [\[code\]](https://github.com/ulab-uiuc/AgentDebug)
-  - **Scope:** General LLM agents; relevant to MAS, but not exclusively a coordination-failure method.
-  - **Mechanism:** Combines module-level error analysis with critical-error identification and corrective feedback.
-  - **Resources:** AgentErrorTaxonomy and AgentErrorBench cover failures in memory, reflection, planning, action, and system operations.
 
 ## Failure Mitigation and Recovery
 
 ### Attribution-Guided Reflection
 
 - **[Wang2026b] DoCtOR.** Finding Where the Buck Stops: An Automated Failure Attribution-Based Reflection Framework for Multi-Agent Collaboration. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2608.28264)
-  - **Mechanism:** Attributes a failure, constructs a counterfactual corrected decisive step, and directs reflection to the responsible agent.
-  - **Focus:** Avoids making every agent learn a lesson from a failure that only some agents caused.
 
 ### Protocol Verification and Repair
 
 - **[Xia2026] TraceFix.** TraceFix: Repairing Agent Coordination Protocols with TLA+ Counterexamples. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2605.07935)
-  - **Mechanism:** Generates coordination protocols, repairs them using model-checker counterexamples, and enforces topology constraints during execution.
-  - **Scope boundary:** Protocol compliance and coordination properties; not a general verifier of factual or semantic correctness at every reasoning step.
 
 ### Cross-Listed Detection-to-Repair Methods
 
@@ -174,30 +134,18 @@ Full paper entries appear above; these are additional capabilities, not addition
 ### Learning Skills from Execution Experience
 
 - **[Ni2026] Trace2Skill.** Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2603.25158)
-  - **Scope:** General agent skill learning.
-  - **Feedback:** Execution experience, recurring pitfalls, and workarounds.
-  - **Update:** Consolidates experience into reusable skills and operating procedures without parameter updates. It is not primarily an online MAS failure detector.
 
 ### Recursive Self-Improvement through Memory
 
 - **[Zhu2026] RSIAgent.** RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2609.15364) [\[code\]](https://github.com/razor-ai/rsiagent) [\[project\]](https://aetherlabsai.github.io/RSIAgent/)
-  - **Scope:** Multi-agent exploration with curriculum, actor, and verifier roles.
-  - **Feedback:** Actual execution and verifier feedback during broad-then-deep exploration.
-  - **Update:** Stores reusable environment knowledge and failure lessons in memory. Model weights remain fixed; memory is frozen for downstream evaluation.
 
 ### Recursive Self-Improvement through Code
 
 - **[Srikanth2026] AIDE².** Recursive self-improvement of AI research agents. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2609.26457)
-  - **Scope:** General AI research agents, not specifically MAS failure attribution.
-  - **Feedback:** Benchmarked performance of candidate agent implementations on development tasks and hidden evaluations.
-  - **Update:** Changes the agent's own code; this differs from reflecting on one failed trajectory or updating a memory bank.
 
 ### Diagnostic Safety Guardrails
 
 - **[Liu2026b] AgentDoG.** AgentDoG: A Diagnostic Guardrail Framework for AI Agent Safety and Security. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2601.18491) [\[code\]](https://github.com/AI45Lab/AgentDoG)
-  - **Scope:** General agent safety and security.
-  - **Signal:** Taxonomy-based diagnosis of risk sources, failure modes, and consequences.
-  - **Scope boundary:** Safety diagnosis is related to, but does not replace, task-failure attribution in MAS. The linked repository also hosts later AgentDoG-family work; this entry refers to the original paper.
 
 ## Method Comparison
 
