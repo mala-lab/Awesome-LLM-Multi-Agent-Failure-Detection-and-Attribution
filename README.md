@@ -87,10 +87,6 @@ Contributions of relevant papers, author-provided resources, and corrections are
 
 ## Failure Attribution
 
-### Agent and Step Localization
-
-See **[Who&When](#failure-benchmarks-and-taxonomies)** for the task formulation, benchmark, and three basic localization approaches. These baselines analyze a failed trajectory rather than providing a prefix-only online alarm protocol.
-
 ### Hypothesis Verification
 
 - **[Qiao2026] VerifyMAS.** VerifyMAS: Hypothesis Verification for Failure Attribution in LLM Multi-Agent Systems. *NeurIPS*, 2026. [\[paper\]](https://arxiv.org/abs/2605.17467) [\[code\]](https://github.com/mala-lab/VerifyMAS) [\[project\]](https://hezheqiao2022.github.io/VerifyMAS/)
