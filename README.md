@@ -63,7 +63,7 @@ This list also includes related agent debugging, diagnostic guardrails, and expe
 - **[Zhang2025] Who&When.** Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems. *ICML*, 2025. [\[paper\]](https://arxiv.org/abs/2505.00212) [\[code\]](https://github.com/ag2ai/Agents_Failure_Attribution) [\[data\]](https://huggingface.co/datasets/Kevin355/Who_and_When)
 - **[Deshpande2025] TRAIL.** TRAIL: Trace Reasoning and Agentic Issue Localization. *arXiv*, 2025. [\[paper\]](https://arxiv.org/abs/2505.08638) [\[data\]](https://huggingface.co/datasets/PatronusAI/TRAIL)
 - **[Kong2026] Aegis / AEGIS-Bench.** Aegis: Automated Error Generation and Attribution for Multi-Agent Systems. *ICLR*, 2026. [\[paper\]](https://arxiv.org/abs/2509.14295) [\[code\]](https://github.com/kfq20/AEGIS) [\[data\]](https://huggingface.co/datasets/Fancylalala/AEGIS)
-- **[Liu2026] Who&When Pro.** Who&When Pro: Can LLMs Really Attribute Failures in AI Agents? *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2607.09996)
+- **[Liu2026] Who&When Pro.** Who&When Pro: Can LLMs Really Attribute Failures in AI Agents? *ICMLW*, 2026. [\[paper\]](https://arxiv.org/abs/2607.09996)
 - **[Chen2026] TraceElephant.** Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2604.22708)
   
 ## Failure Detection
@@ -74,7 +74,7 @@ This list also includes related agent debugging, diagnostic guardrails, and expe
 
 ### Online Auditing and Message Checking
 
-- **[Zhang2026] AgentForesight.** AgentForesight: Online Auditing for Early Failure Prediction in Multi-Agent Systems. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2605.08715) [\[code\]](https://github.com/ZBox1005/AgentForesight) [\[project\]](https://zbox1005.github.io/agent-foresight/) [\[data\]](https://huggingface.co/datasets/ZBox008003/AFTraj)
+- **[Zhang2026] AgentForesight.** AgentForesight: Online Auditing for Early Failure Prediction in Multi-Agent Systems. *NeurIPS*, 2026. [\[paper\]](https://arxiv.org/abs/2605.08715) [\[code\]](https://github.com/ZBox1005/AgentForesight) [\[project\]](https://zbox1005.github.io/agent-foresight/) [\[data\]](https://huggingface.co/datasets/ZBox008003/AFTraj)
 - **[Wang2026a] MASRubric.** MASRubric: Auditing Information Flow in Multi-Agent Systems with Failure-Distilled Pitfall Rubrics. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2602.23258) [\[author-linked repository\]](https://github.com/TonySY2/MASRubric)
 
 ### Proactive Failure Forecasting
