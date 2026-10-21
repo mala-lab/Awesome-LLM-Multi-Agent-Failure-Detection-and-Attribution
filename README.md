@@ -86,17 +86,12 @@ This list also includes related agent debugging, diagnostic guardrails, and expe
 ### Unsupervised Trajectory Modeling
 
 - **[Yeh2026] OAT.** Tracing Agentic Failure from the Flow of Success. *NeurIPS*, 2026. [\[paper\]](https://arxiv.org/abs/2607.12747) [\[code\]](https://github.com/deeplearning-wisc/OAT)
-  - Learns trajectory dynamics from successful runs only and localizes error steps through deviations from the learned normal flow; covers general-agent and MAS settings.
-
+  
 ### Graph and Dependency-Based Attribution
 
 - **[Li2026] AFANet.** Beyond LLM-Based Reasoning: Lightweight GNNs for Agent Failure Attribution. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2608.18575)
-  - Uses a turn-level conversation graph and lightweight GNN to predict faulty agents and their error types.
-
 - **[Deng2026] DeFA.** DeFA: Dependency-Guided Failure Attribution for LLM Agents. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2610.01256)
-
 - **[Liao2026] EMFA.** Error-Propagation Modeling for Failure Attribution in LLM-Based Multi-Agent Systems. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2610.11600)
-  - Models error cascades and persistent interaction loops, then screens and counterfactually verifies decisive agent-step candidates.
 
 ### Hypothesis Verification
 
