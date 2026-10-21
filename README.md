@@ -6,11 +6,7 @@
 
 A curated collection of papers on **failure detection, failure attribution, recovery, and learning from failures in LLM-based multi-agent systems (MAS)**.
 
-This list also includes related agent debugging, diagnostic guardrails, and experience-based self-improvement. These broader settings are explicitly marked.
-
-**Last reviewed:** October 19, 2026. **Coverage:** 20 unique papers. This is a focused reading list, not an exhaustive survey.
-
-Contributions of relevant papers, author-provided resources, and corrections are welcome.
+This list also includes related agent debugging, diagnostic guardrails, and experience-based self-improvement. These broader settings are explicitly marked. Contributions of relevant papers, author-provided resources, and corrections are welcome.
 
 ## Contents
 
