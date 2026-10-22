@@ -86,7 +86,7 @@ This list also includes related agent debugging, diagnostic guardrails, and expe
 
 ### Representation-Based Monitoring
 
-- **[Li2026] AFANet.** Beyond LLM-Based Reasoning: Lightweight GNNs for Agent Failure Attribution. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2608.18575)
+- **[Li2026] AFANet.** Beyond LLM-Based Reasoning: Lightweight GNNs for Agent Failure Attribution. *NeurIPS*, 2026. [\[paper\]](https://arxiv.org/abs/2608.18575)
 - **[Deng2026] DeFA.** DeFA: Dependency-Guided Failure Attribution for LLM Agents. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2610.01256)
 - **[Liao2026] EMFA.** Error-Propagation Modeling for Failure Attribution in LLM-Based Multi-Agent Systems. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2610.11600)
 - **[Yeh2026] OAT.** Tracing Agentic Failure from the Flow of Success. *NeurIPS*, 2026. [\[paper\]](https://arxiv.org/abs/2607.12747) [\[code\]](https://github.com/deeplearning-wisc/OAT)
