@@ -72,6 +72,7 @@ This list also includes related agent debugging, diagnostic guardrails, and expe
 
 - **[Shen2025] MASC.** Metacognitive Self-Correction for Multi-Agent System via Prototype-Guided Next-Execution Reconstruction. *arXiv*, 2025. [\[paper\]](https://arxiv.org/abs/2510.14319) [\[author-linked anonymous code\]](https://anonymous.4open.science/r/MASC-7194)
 
+
 ### Online Auditing and Message Checking
 
 - **[Zhang2026] AgentForesight.** AgentForesight: Online Auditing for Early Failure Prediction in Multi-Agent Systems. *NeurIPS*, 2026. [\[paper\]](https://arxiv.org/abs/2605.08715) [\[code\]](https://github.com/ZBox1005/AgentForesight) [\[project\]](https://zbox1005.github.io/agent-foresight/) [\[data\]](https://huggingface.co/datasets/ZBox008003/AFTraj)
@@ -83,16 +84,13 @@ This list also includes related agent debugging, diagnostic guardrails, and expe
 
 ## Failure Attribution
 
-### Unsupervised Trajectory Modeling
-
-- **[Yeh2026] OAT.** Tracing Agentic Failure from the Flow of Success. *NeurIPS*, 2026. [\[paper\]](https://arxiv.org/abs/2607.12747) [\[code\]](https://github.com/deeplearning-wisc/OAT)
-  
-### Graph and Dependency-Based Attribution
+### Representation-Based Monitoring
 
 - **[Li2026] AFANet.** Beyond LLM-Based Reasoning: Lightweight GNNs for Agent Failure Attribution. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2608.18575)
 - **[Deng2026] DeFA.** DeFA: Dependency-Guided Failure Attribution for LLM Agents. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2610.01256)
 - **[Liao2026] EMFA.** Error-Propagation Modeling for Failure Attribution in LLM-Based Multi-Agent Systems. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2610.11600)
-
+- **[Yeh2026] OAT.** Tracing Agentic Failure from the Flow of Success. *NeurIPS*, 2026. [\[paper\]](https://arxiv.org/abs/2607.12747) [\[code\]](https://github.com/deeplearning-wisc/OAT)
+  
 ### Hypothesis Verification
 
 - **[Qiao2026] VerifyMAS.** VerifyMAS: Hypothesis Verification for Failure Attribution in LLM Multi-Agent Systems. *NeurIPS*, 2026. [\[paper\]](https://arxiv.org/abs/2605.17467) [\[code\]](https://github.com/mala-lab/VerifyMAS) [\[project\]](https://hezheqiao2022.github.io/VerifyMAS/)
@@ -104,6 +102,8 @@ This list also includes related agent debugging, diagnostic guardrails, and expe
 ### Related General-Agent Diagnosis
 
 - **[Zhu2025] AgentDebug.** Where LLM Agents Fail and How They can Learn From Failures. *arXiv*, 2025. [\[paper\]](https://arxiv.org/abs/2509.25370) [\[code\]](https://github.com/ulab-uiuc/AgentDebug)
+
+
 
 ## Failure Mitigation and Recovery
 
