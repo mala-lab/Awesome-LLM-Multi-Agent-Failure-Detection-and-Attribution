@@ -65,6 +65,7 @@ This list also includes related agent debugging, diagnostic guardrails, and expe
 - **[Kong2026] Aegis / AEGIS-Bench.** Aegis: Automated Error Generation and Attribution for Multi-Agent Systems. *ICLR*, 2026. [\[paper\]](https://arxiv.org/abs/2509.14295) [\[code\]](https://github.com/kfq20/AEGIS) [\[data\]](https://huggingface.co/datasets/Fancylalala/AEGIS)
 - **[Liu2026] Who&When Pro.** Who&When Pro: Can LLMs Really Attribute Failures in AI Agents? *ICMLW*, 2026. [\[paper\]](https://arxiv.org/abs/2607.09996)
 - **[Chen2026] TraceElephant.** Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2604.22708)
+- **[Sun2026] PerspectiveGap.** PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting. *arXiv*, 2026. [\[paper\]](https://arxiv.org/abs/2606.08878) [\[code\]](https://github.com/WhymustIhaveaname/PerspectiveGap) [\[data\]](https://huggingface.co/datasets/sun1245/PerspectiveGap)
   
 ## Failure Detection
 
@@ -176,6 +177,7 @@ The categories below are editorial groupings based on each paper's stated task a
 | AEGIS | Controlled error generation and attribution | [Dataset](https://huggingface.co/datasets/Fancylalala/AEGIS) |
 | TRAIL | Trace error categorization and localization | [Dataset](https://huggingface.co/datasets/PatronusAI/TRAIL) |
 | TraceElephant | Full-observability attribution | [Paper](https://arxiv.org/abs/2604.22708) |
+| PerspectiveGap | Omissions and leaks in orchestrator-written sub-agent prompts | [Dataset](https://huggingface.co/datasets/sun1245/PerspectiveGap) |
 | AFTraj-2K | Safe/unsafe trajectories for online auditing | [Dataset](https://huggingface.co/datasets/ZBox008003/AFTraj) |
 | AgentErrorBench | General-agent errors and debugging | [Project repository](https://github.com/ulab-uiuc/AgentDebug) |
 | ATBench | Agent safety evaluation and diagnosis | [Dataset](https://huggingface.co/datasets/AI45Research/ATBench) |
